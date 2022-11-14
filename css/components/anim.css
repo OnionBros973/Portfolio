@@ -1,0 +1,24 @@
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    to {
+      opacity: 0;
+      left: -9999px;
+    }
+  }
+
+@keyframes In {
+    from {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

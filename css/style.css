@@ -1,0 +1,176 @@
+@import url(components/title.css);
+@import url(components/anim.css);
+@import url(components/split.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    background-color: black !important;
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+/* Page de présentation */
+
+.In {
+    display: flex;
+    width: 100%;
+    animation: In 2s linear;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.In h1 {
+    font-size: 12vw;
+}
+
+.In h2 {
+    font-size: 10vw;
+}
+
+.In p {
+    font-size: 2vw;
+    width: 80%;
+}
+
+.In h1,.In h2,.In p {
+    color: white;
+}
+
+/* Page de jeux vidéo */
+
+.first-quarter {
+    width: 100%;
+    height: 60vw;
+    background: #252c35;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.first-quarter h2 {
+    display: inline;
+	position: relative;
+	font-size: 10vw;
+	color: rgba(212, 0, 255, 0.822);
+    font-family: 'Dancing Script', cursive;
+}
+
+.first-quarter h2:after {
+    content: "Punke'dOut";
+	position: absolute; left: 1%; top: 1%;
+	color: rgba(0, 255, 255, 0.911);
+}
+
+.center {
+    border: 5px solid rgba(212, 0, 255, 0.897);
+    border-radius: 5px;
+    font-size: 2vw;
+	color: rgba(0, 255, 255, 0.911);
+    width: 70%;
+    box-shadow: 10px 10px 2px 1px rgba(212, 0, 255, 0.897);
+    justify-content: justify;
+    height: fit-content;
+}
+
+.second-quarter {
+    width: 100%;
+    height: 55vw;
+    background: grey;
+}
+
+.item1 { grid-area: intro; }
+.item2 { grid-area: hacking; }
+.item3 { grid-area: dash; }
+.item4 { grid-area: phrase; }
+.item5 { grid-area: katana; }
+.item6 { grid-area: pistolet; }
+.item7 { grid-area: pompe; }
+.item8 { grid-area: jack;}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'intro intro intro intro intro intro jack  '
+      'hacking hacking hacking dash dash dash jack '
+      'phrase phrase phrase phrase phrase phrase jack '
+      'katana katana pistolet pistolet pompe pompe jack '
+      ;
+    gap: 5%;
+    padding: 5%;
+	color: rgba(0, 255, 255, 0.911);
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 5%;
+    font-size: 2vw;
+}
+
+.item2, .item3, .item5, .item6, .item7 {
+    border: 5px solid rgba(212, 0, 255, 0.822);
+    border-radius: 5px;
+}
+
+.item8 img {
+    border-radius: 9999px;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.third-quarter {
+    width: 100%;
+    height: 55vw;
+}
+
+.fourth-quarter {
+    width: 100%;
+    height: 55vw;
+    background: rgb(3, 40, 65);
+    display: flex;
+}
+
+.part img {
+    max-width: 100%;
+}
+
+.part p {
+    border: 5px solid rgba(212, 0, 255, 0.808);
+    border-radius: 5px;
+    font-size: 2vw;
+	color: rgba(0, 255, 255, 0.911);
+}
+
+.left {
+    transition: all .5s linear;
+    cursor: pointer;
+}
+
+.left:hover {
+    transform: scale(1.1);
+}
+
+.bg {
+    background-image: url("../images/GUI2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100vw 100vh;
+}
+
+/* Page de 3D */
+
+.carousel-item img {
+    object-fit: scale-down;
+}
+
+/* Page de marketing */
+
+.card-img-top {
+    height: 30vw !important;
+}

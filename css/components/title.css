@@ -1,0 +1,17 @@
+.fadeOut {
+  animation: fadeOut 2s linear;
+  animation-fill-mode: forwards;
+  font-size: 12vw;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  flex-wrap: nowrap;
+  overflow: visible;
+  white-space: nowrap;
+}
+

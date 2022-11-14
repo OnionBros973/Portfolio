@@ -1,0 +1,9 @@
+.split {
+    display: flex;
+    align-items: center;
+}
+
+.part {
+    width: 50%;
+    padding: 3%;
+}
